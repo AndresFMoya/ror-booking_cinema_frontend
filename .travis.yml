@@ -11,4 +11,4 @@ deploy:
   provider: script
   script: bash deploy.sh
   on:
-    branch: milestone0/cicd
+    branch: develop
