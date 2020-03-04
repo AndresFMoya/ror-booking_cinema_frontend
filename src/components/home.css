@@ -1,0 +1,10 @@
+.button {
+    border-radius: 25px;
+    height: 40px;
+    background-color: #0088FE;
+    color: white;
+}
+
+.movie-section {
+    margin-top: 40px;
+}

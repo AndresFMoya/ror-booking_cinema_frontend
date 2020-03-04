@@ -1,0 +1,18 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+panel {
+    height: 100vh;
+}
+
+.navbar {
+    background-color: #0088FE;
+    width: 20%;
+    min-height: 100vh;
+}
+
+.dashboard {
+    background-color: #FAFAFA;
+}
