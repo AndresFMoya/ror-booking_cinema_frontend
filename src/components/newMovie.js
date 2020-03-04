@@ -126,7 +126,7 @@ const NewMovie = () => {
             </div>
             <div className="form-group">
               <label htmlFor="dateEnd">Date End</label>
-              <input className="form-control" placeholder="End Date" onChange={handleChange} id="dateEnd" value={dateEnd} name="dateEnd"/>
+              <input className="form-control" placeholder="End Date " onChange={handleChange} id="dateEnd" value={dateEnd} name="dateEnd"/>
             </div>
             <button className="btn btn-primary" type="submit">ADD MOVIE</button>
             </div>
