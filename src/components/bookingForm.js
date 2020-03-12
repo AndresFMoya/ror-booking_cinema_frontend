@@ -79,9 +79,9 @@ const BookingForm = ({ client }) => {
     email: '',
     phone: '',
   });
-  
+
   const { name, card, email, phone } = state;
-  
+
   async function findUser() {
     const result = await client
       .query({query: GET_USER, variables: {card: parseInt(state.card)} })
@@ -89,7 +89,7 @@ const BookingForm = ({ client }) => {
     const data = await result.data
     try {return (parseInt(data.user[0].id)) } catch {}
   }
-  
+
   async function createUser() {
     try {
       await client
@@ -97,32 +97,25 @@ const BookingForm = ({ client }) => {
         .catch(err => console.log(err));
     } catch {}
   }
-  
+
   async function findMovie() {
     const movieId = await client.query({query: GET_MOVIE});
     try {return (parseInt(movieId.data.currentMovie))} catch {}
   }
-  
+
   async function createBooking (e) {
     e.preventDefault();
-    if (name !== '' && card !== '' && phone !== '' && email !== '') {
-    try {
-      // Attempt to create the user. If user exists, nothing happens.
-      createUser().then (()=> {
-          findUser().then ((user)=> {
-            findMovie().then ((movie) => {
-              client.mutate({mutation: NEW_BOOKING, variables: {userId: user, movieId: movie }, refetchQueries}
-              )}
-            )}
-          )}
-        )
-      } catch {}
-    }
-    else {
+    if (!(name !== '' && card !== '' && phone !== '' && email !== '')) {
       window.alert('All fields are required')
+    } else {
+      try {
+        await createUser();
+      } catch {}
+      const [user, movie] = await Promise.all([findUser(), findMovie()]);
+      await client.mutate({mutation: NEW_BOOKING, variables: {userId: user, movieId: movie}, refetchQueries})
     }
   }
-  
+
   const handleChange = ({ target }) => {
     const { name, value } = target;
     if (name === 'name') {
@@ -158,7 +151,7 @@ const BookingForm = ({ client }) => {
       });
     }
   };
-  
+
   return (
       <form onSubmit={ e => createBooking(e) }>
         <h4>Book a Movie</h4>
