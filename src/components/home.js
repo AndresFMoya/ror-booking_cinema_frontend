@@ -41,9 +41,9 @@ const Home = ({client}) => {
               <div><NewMovie /></div>
             </Popup>
             </header>
-            <main className="movie-section d-flex flex-wrap justify-content-between">
+            <main className="movie-section d-flex flex-wrap">
               {movies.map(movie => (
-                <div key={`user__${movie.id}`}>
+                <div className="m-2" key={`user__${movie.id}`}>
                   <div>
                     <Popup onOpen={
                       e => {
