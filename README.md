@@ -8,7 +8,6 @@
 </p>
 <br>
 
-[![Build Status](https://travis-ci.org/AndresFMoya/ror-booking_cinema_frontend.svg?branch=develop)](https://travis-ci.org/AndresFMoya/ror-booking_cinema_backend)
 
 This project consist of an small movie booking system using Ruby on Rails on back end and ReactJS on front end.
 [Back End](https://github.com/AndresFMoya/ror-booking_cinema_backend)
