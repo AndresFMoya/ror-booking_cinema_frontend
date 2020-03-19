@@ -1,10 +1,7 @@
 # Movie Booking - Front End - Ruby on Rails
 [![Build Status](https://travis-ci.org/AndresFMoya/ror-booking_cinema_frontend.svg?branch=develop)](https://travis-ci.org/AndresFMoya/ror-booking_cinema_backend)
 
-![ERD](lib/assets/Booking_Cinema_ERD.jpg)
-
 This project consist of an small movie booking system using Ruby on Rails on back end and ReactJS on front end.
-
 [Back End](https://github.com/AndresFMoya/ror-booking_cinema_backend)
 
 In this project, we will build a Web App with the following technologies:
@@ -21,6 +18,7 @@ In this project, we will build a Web App with the following technologies:
 ## Technologies used
 
 - Ruby on Rails
+- RSpec
 - PostgreSQL
 - Apollo Client
 - GraphQL
@@ -37,9 +35,9 @@ In this project, we will build a Web App with the following technologies:
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome! Feel free to check [issues page](https://github.com/AndresFMoya/ror-booking_cinema_backend/issues).
+Contributions, issues and feature requests are welcome! Feel free to check [issues page](https://github.com/AndresFMoya/ror-booking_cinema_frontend/issues).
 
-1. Fork it (https://github.com/tiagoit/mv-final-capstone-project/development/fork)
+1. Fork it (https://github.com/AndresFMoya/ror-booking_cinema_frontend/fork)
 2. Create your working branch (git checkout -b [choose-a-name])
 3. Commit your changes (git commit -am 'what this commit will fix/add/improve')
 4. Push to the branch (git push origin [chosen-name])
@@ -58,7 +56,7 @@ Give a ⭐️ if you like this project!
 
 ## License
 
-This project is [MIT](https://github.com/AndresFMoya/ror-booking_cinema_backend/blob/develop/LICENSE) licensed.
+This project is [MIT](https://github.com/AndresFMoya/ror-booking_cinema_frontend/blob/develop/LICENSE) licensed.
 
 
 ## Contact
