@@ -1,6 +1,11 @@
 <p>
   <h1 align="center">Movie Booking - Front End - Ruby on Rails</h1>
 </p>
+<p align="center">
+  <a href="#">
+    <img src="https://travis-ci.org/AndresFMoya/ror-booking_cinema_frontend.svg?branch=develop" alt="build">
+  </a>
+</p>
 <br>
 
 [![Build Status](https://travis-ci.org/AndresFMoya/ror-booking_cinema_frontend.svg?branch=develop)](https://travis-ci.org/AndresFMoya/ror-booking_cinema_backend)
