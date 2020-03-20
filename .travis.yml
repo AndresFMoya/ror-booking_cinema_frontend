@@ -4,8 +4,10 @@ node_js:
 cache:
   directories:
     - node_modules
+install:
+  - yarn install
 script:
-  - yarn run build
+  - yarn build
 deploy:
   # Build Docker container and push to Docker Hub
   provider: script
