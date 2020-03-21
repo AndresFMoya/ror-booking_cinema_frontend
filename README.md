@@ -10,6 +10,7 @@
 
 
 This project consist of an small movie booking system using Ruby on Rails on back end and ReactJS on front end.
+
 [Back End](https://github.com/AndresFMoya/ror-booking_cinema_backend)
 
 ![Screenshot](lib/Movie_Booking_Screenshot.png)
