@@ -9,7 +9,7 @@ import { createHttpLink } from 'apollo-link-http'
 import { InMemoryCache } from 'apollo-cache-inmemory'
 
 const httpLink = createHttpLink({
-  uri: 'http://localhost:3000/graphql'
+  uri: 'https://movie-booking-back.herokuapp.com/graphql'
 });
 
 const cache = new InMemoryCache({
