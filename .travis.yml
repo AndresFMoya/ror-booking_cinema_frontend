@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+  - "stable"
+cache:
+  directories:
+    - node_modules
+install:
+  - yarn install
+script:
+  - yarn build
+deploy:
+  # Build Docker container and push to Docker Hub
+  provider: script
+  script: bash deploy.sh
+  on:
+    branch: develop
