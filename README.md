@@ -13,7 +13,7 @@ This project consist of an small movie booking system using Ruby on Rails on bac
 
 [Back End](https://github.com/AndresFMoya/ror-booking_cinema_backend)
 
-![Screenshot](lib/Movie_Booking_Screenshot.png)
+[![Booking Video](https://img.youtube.com/vi/h_HAgVwA-ng/0.jpg)](https://www.youtube.com/watch?v=h_HAgVwA-ng)
 
 In this project, we will build a Web App with the following technologies:
 - API
