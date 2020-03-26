@@ -41,8 +41,13 @@ In this project, we will build a Web App with the following technologies:
 - TravisCI (CI/CD)
 
 
-## [Live Version](#)
+## [Live Version](https://movie-booking-front.herokuapp.com/)
 
+##  Potential Future Features
+
+- Implement an Authentication/Authorization System
+- Improve and clean UI.
+- Add field type validation.
 
 ## 🤝 Contributing
 
